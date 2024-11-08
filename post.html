@@ -6,13 +6,10 @@
     <title>Blog Post</title>
 </head>
 <body>
-    <h1 id="post-title"></h1>
-    <p id="post-content"></p>
-
-    <input type="text" id="edit-title" />
-    <textarea id="edit-content"></textarea>
-    <button id="save-button">Save Changes</button>
-
-    <button id="edit-button">Edit Post</button>
-
+    <h1>Edit Post</h1>
+    <form id="edit-post-form">
+        <input type="text" id="edit-title" placeholder="Post Title" required />
+        <textarea id="edit-content" placeholder="Post Content" required></textarea>
+        <button type="submit">Save Changes</button>
+    </form>
     
