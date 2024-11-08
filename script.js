@@ -1,13 +1,27 @@
-const id = document.querySelector("id"), 
-    h2 = document.querySelector("h2"); 
-    h2.innerHtML = localStorage.getItem("value")
-id.addEventListener("keyup", display)
+const blogPosts = [
+    {
+        title: "Blog # 1",
+        content: "Full content."
+    },
 
-function display() { 
-    localStorage.setItem ('value', id.vaule);
-    h2.innerHtML = localStorage.getItem("value")
-}
+    {
+        title: "Blog # 2",
+        content: "Full content."
+    },
 
 
+    {
+        title: "Blog # 2",
+        content: "Full content."
+    },
+]
 
 
+localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+
+    function loadBlogPosts() {
+        const postsContainer = document.getElementById('blog-posts');
+        const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || []
+
+
+    } 

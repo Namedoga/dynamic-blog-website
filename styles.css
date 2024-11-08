@@ -2,15 +2,26 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    background-color:red
 }
+div { 
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+  }
+  
+  
 
-body {
-    font-family: Arial, sans-serif;
-}
 
-h1 {
-    text-align: center;
-}
+
+
+    h1 {
+        color: darkblue;
+        font-size: 36px;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+      }
 
 
 form {
